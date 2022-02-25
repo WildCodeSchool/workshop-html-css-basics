@@ -1,4 +1,6 @@
-# Responsive design workshop 
+# HTML/CSS Basics workshop 
+
+> ⚠️ Rules for this workshop: build and design a web page only with a semantic HTML structure (no class, no id in CSS). 
 
 ## Initialisation
 - In a new folder, create a *index.html* file.
@@ -26,13 +28,11 @@ Good job !
 
 
 ## Layout of your website
-You will have to create a basic responsive website (mobile first) following the layout below (**do not try** to be pixel perfect, this image is just a guide). 
+You will have to create a basic home page following the layout below (**do not try** to be pixel perfect, this image is just a guide). 
 
-![Layout to reproduce](mobile_layout.jpg) 
+![Layout to reproduce](desktop_layout.png)
 
-*(The screenshot has been made at 360px viewport width, it is a standard smartphone size).*
-
-> Hint : Browsers have default size for each HTML elements (margin, font-size, etc.). It is useful but sometimes you will prefer to reset some default behaviour. In this workshop, it could be interesting to remove margion on `<body>`. Furthermore, use `box-sizing: border-box` on each element will help you to deal element sizing (more info about [box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)).
+> Hint : Browsers have default size for each HTML elements (margin, font-size, etc.). It is useful but sometimes you will prefer to reset some default behaviour. In this workshop, it could be interesting to remove margin on `<body>`. Furthermore, use `box-sizing: border-box` on each element will help you to deal element sizing (more info about [box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)).
 >
 >```css
 >  * {
@@ -44,42 +44,36 @@ You will have to create a basic responsive website (mobile first) following the 
 >  }
 >```
 
-### Navbar
-- Try to reproduce the navbar. Start to create a `<nav>` tag and add the background color #f76c6c
-- Then, analyse the navbar structure. You have a brand name "Workshop" at the left and a group of menu items at the right. Reproduce this using **flexbox**.
-- Add some padding and color to improve the result. 
 
-> Reminder : [Video - Flexbox in 100s](https://www.youtube.com/watch?v=K74l26pE4YA)
-> [Flexbox basics Cheatsheet](https://jonitrythall.com/content/images/flexboxsheet.pdf)
+
+### Navbar
+- Try to reproduce the navbar. Start to create a `<nav>` tag and add the background color `#f76c6c`.
+- Then, analyse the navbar structure. You have a brand name "Workshop" at the top left and a group of menu items below.
+- Using an unordered list can be a good idea for the menu group, but don't forget to display it horizontally and without the bullets.
 
 ### Header
-- Wrap your `<h1>` in a `<header>` tag and add a 300px height. 
+- Wrap your `<h1>` in a `<header>` tag and add a 250px min-height. 
 - Add a background image (e.g a ramdon one on [loremflicker](https://loremflickr.com/1200/300))
-- Center your main title (using flexbox) and change font size / color if necessary
+- Center your main title and change font size / color if necessary
 
 > Hint: [Manage background size](https://developer.mozilla.org/fr/docs/Web/CSS/background-size)
 
 ### "About us" Section
 - Good practice is to wrap sections in a `<main>` tag.
 - Add a first `<section>` and a `<h2>` according to the template
-- Add some fake text in a paragraph. Change `font-size` (20px), `line-height` (150%) and `font-family` (Verdana) to improve readability.
-- Adjust margin / padding if necessary
+- Add some fake text in a paragraph. Change `line-height` (1.5) and `font-family` (Verdana) to improve readability. This can be done in the `body` properties.
+- Limit the `max-width` to 65ch. This will ensure you have a text width that does not exceed 85 characters making reading more comfortable. 
+- Finally, you can use the `margin` property to center the block horizontally.
 
-### Products Section
-- Add a new section. 
-- Using CSS grid, create a 4 columns / 2 rows layout.
-- Add 5 products according to the template (first one will take 4 cells in the grid, others only one).
+> Hint: [Centering in CSS: A complete guide](https://css-tricks.com/centering-css-complete-guide/)
 
-> Reminder : [CSS Grid basics in 5 minutes](https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228)
+### Featured posts Section
+- Add a new section.
+- Give it a `<h2>` with the appropriated text content. 
+- Add 4 `<article>` children below.
+- Each article might have `<h1>` containing his name. 
+- Adjust the layout to get 2 items per line with the `display` and `width` properties.
+Rounding and drop shadow effects can be achieved with `border-radius` and `box-shadow`.
 
-## Make it responsive
-Add media queries and use CSS functions to obtain the responsive layout below at 1200px. 
-> You can use a breakpoint around 500px in your media queries, but focus on display at 360px and 1200px for this workshop. Do not try for now to be perfectly responsive for each screen size.
-
-![Layout to reproduce](desktop_layout.jpg) 
-
-*(The screenshot has been made at 1200px viewport width.)*
-
-- Make the navbar responsive by changing `flex-direction` for the menu items.
-- Use `clamp()` function to make your `<h1>` readable for each size.
-- Modify the Grid template to adapt the products horizontally, but still keep a largest "Product 1".
+### Footer
+Because you have a `<header>`, you need a `<footer>`. This should not be a problem for you 😉 .
