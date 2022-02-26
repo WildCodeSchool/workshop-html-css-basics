@@ -33,7 +33,7 @@ You will have to create a basic home page following the layout below (**do not t
 
 ![Layout to reproduce](desktop_layout.png)
 
-> Hint: Browsers have default size for each HTML elements (margin, font-size, etc.). It is useful but sometimes you will prefer to reset some default behaviour. In this workshop, it could be interesting to remove margin on `<body>`. Furthermore, use `box-sizing: border-box` on each element will help you to deal element sizing (more info about [box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)).
+> Hint: Browsers have default size for each HTML elements (margin, font-size, etc.). It is useful but sometimes you will prefer to reset some default behaviour. In this workshop, it could be interesting to remove margin on `<body>`. Furthermore, use `box-sizing: border-box` on each element will help you to deal element sizing (more info about [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)).
 >
 > ```css
 > * {
@@ -57,7 +57,7 @@ You will have to create a basic home page following the layout below (**do not t
 - Add a background image (e.g a ramdon one on [loremflicker](https://loremflickr.com/1200/300)).
 - Center your main title and change font size / color if necessary.
 
-> Hint: [Manage background size](https://developer.mozilla.org/fr/docs/Web/CSS/background-size)
+> Hint: [Manage background size](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
 
 ### "About us" Section
 
