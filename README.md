@@ -64,7 +64,10 @@ You will have to create a basic home page following the layout below (**do not t
 - Good practice is to wrap sections in a `<main>` tag.
 - Add a first `<section>` and a `<h2>` according to the template.
 - Add some fake text in a paragraph. Change `line-height` (1.5) and `font-family` (Verdana) to improve readability. This can be done in the `body` properties.
-- Limit the `max-width` to 65ch. This will ensure you have a text width that does not exceed 65 characters making reading more comfortable.
+- Limit the `max-width` to 65ch. This will ensure you have a text width that does not exceed 85 characters making reading more comfortable.
+> A little explanation: in css, the unit `ch` is a unit relative to the width of character 0 (the widest character in most fonts). Specifying 65ch allows us to ensure a column width of between 65 and about 85 characters for all signs combined, a text block width that is highly recommended by numerous studies on digital accessibility and our reading behaviour. More explanation on [this article](https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939) or [this one](https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/#line-length-measure-and-reading) if you are interested in the subject.
+
+
 - Finally, you can use the `margin` property to center the block horizontally.
 
 > Hint: [Centering in CSS: A complete guide](https://css-tricks.com/centering-css-complete-guide/)
