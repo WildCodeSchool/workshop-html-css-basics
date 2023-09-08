@@ -48,7 +48,7 @@ body {
 
 ### Navbar
 
-- Try to reproduce the navbar. Start to create a `<nav>` tag and add the background color `#f76c6c`.
+- Try to reproduce the navbar. Start to create a `<nav>` tag and add the background color `#a306b6`.
 - Then, analyse the navbar structure. You have a brand name "Workshop" at the top left and a group of menu items below.
 - Using an unordered list can be a good idea for the menu group, but don't forget to display it horizontally and without the bullets.
 
