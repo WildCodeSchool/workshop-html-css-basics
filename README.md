@@ -79,7 +79,7 @@ body {
 - Add a new section.
 - Give it a `<h2>` with the appropriated text content. 
 - Add 4 `<article>` children below.
-- Each article might have `<h1>` containing his name. 
+- Each article might have `<h3>` containing his name. 
 - Adjust the layout to get 2 items per line with the `display` and `width` properties.
 Rounding and drop shadow effects can be achieved with `border-radius` and `box-shadow`.
 
